@@ -1,0 +1,16 @@
+{
+  "name": "mii-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/desktop"
+  ],
+  "scripts": {
+    "dev": "npm run dev:desktop",
+    "dev:desktop": "npm run --workspace=apps/desktop dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "wait-on": "^7.0.1"
+  }
+}
